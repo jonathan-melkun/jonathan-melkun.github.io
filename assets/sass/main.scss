@@ -17,14 +17,14 @@
 // Breakpoints.
 
 	@include breakpoints((
-		xlarge:   ( 1281px,  1680px ),F
+		xlarge:   ( 1281px,  1680px ),
 		large:    ( 1025px,  1280px ),
 		medium:   ( 737px,   1024px ),
 		small:    ( 481px,   736px  ),
 		xsmall:   ( null,    480px  ),
 	));
 
-	$size-header: 23em;
+	$size-header: 16em;
 
 // Reset.
 // Based on meyerweb.com/eric/tools/css/reset (v2.0 | 20110126 | License: public domain)
@@ -331,8 +331,9 @@
 			text-align: center;
 		}
 	}
-
+	
 	header {
+		
 		p {
 			color: _palette(fg-light);
 			position: relative;
@@ -1193,7 +1194,7 @@
 
 		> header {
 			@include vendor('flex-shrink', '0');
-			padding: 3em;
+			padding: 1em;
 
 			.avatar {
 				display: block;
@@ -1208,7 +1209,7 @@
 
 			p {
 				color: _palette(header, fg);
-				font-style: italic;
+				font-size:0.9em;
 				margin: 1em 0 0 0;
 			}
 		}
@@ -1217,7 +1218,7 @@
 			@include vendor('flex-shrink', '0');
 			bottom: 0;
 			left: 0;
-			padding: 2em;
+			padding: 1em;
 			width: 100%;
 
 			.icons {
@@ -1333,7 +1334,7 @@
 
 	@include breakpoint('<=xlarge') {
 
-		$size-header: 21em;
+		$size-header: 16em;
 
 		/* Basic */
 
@@ -1347,11 +1348,11 @@
 				width: $size-header;
 
 				> header {
-					padding: 2em;
+					padding: 1em;
 				}
 
 				> footer {
-					padding: 1.5em;
+					padding: 1em;
 				}
 			}
 
@@ -1382,7 +1383,7 @@
 
 	@include breakpoint('<=large') {
 
-		$size-header: 20em;
+		$size-header: 16em;
 
 		/* Basic */
 
@@ -1416,6 +1417,8 @@
 	}
 
 	@include breakpoint('<=medium') {
+
+		$size-header: 16em;
 
 		/* Basic */
 
@@ -1584,7 +1587,7 @@
 
 	@include breakpoint('<=small') {
 
-		$size-header: 17em;
+		$size-header: 16em;
 
 		/* Basic */
 
@@ -1846,7 +1849,7 @@
 		--headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
 		--bodyFontSize: 1rem;
 		/* 60px - 100px top and bottom */
-		--sectionPadding: clamp(3.75rem, 7.82vw, 6.25rem) 1rem;
+		--sectionPadding: 5em 1.2em 5em 1.2em;
 	}
 	.cs-topper {
 		font-size: var(--topperFontSize);
