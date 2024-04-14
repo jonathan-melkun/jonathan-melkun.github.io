@@ -1371,9 +1371,10 @@ section.special, article.special {
 }
 
 header p {
+  margin-top: -0.75em;
   color: #aaa;
   position: relative;
-  margin: 0 0 1.6875em 0;
+  font-size: 1.5em;
 }
 header h2 + p {
   font-size: 1.25em;
@@ -1394,13 +1395,14 @@ header h6 + p {
 }
 header.major h2 {
   color: #c73044;
-  font-size: 3.5em;
+  font-size: 5.5em;
 }
 header.major h2 + p {
   color: #777;
-  font-size: 1.75em;
+  font-size: 2.75em;
   font-weight: 700;
   margin-top: -0.75em;
+  margin-bottom: 1em;
 }
 
 /* Form */
@@ -2283,10 +2285,10 @@ input[type=button]:disabled,
 
 /* Main */
 #main > section {
-  border-top: solid 2px #f4f4f4;
+  border-top: solid 6px #f4f4f4;
 }
 #main > section > .container {
-  padding: 6em 0 4em 0;
+  padding: 1.2em 0 1.2em 0;
 }
 #main > section:first-child {
   border-top: 0;
@@ -2343,7 +2345,7 @@ input[type=button]:disabled,
   }
   /* Main */
   #main > section > .container {
-    padding: 4em 0 2em 0;
+    padding: 1em 0 1em 0;
   }
 }
 /* Large */
