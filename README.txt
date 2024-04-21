@@ -5,6 +5,7 @@ Credits:
 
 	Code Snippets from:
 		CodeStitch (codestitch.app)
+
 	Demo Images:
 		Unsplash (unsplash.com)
 
